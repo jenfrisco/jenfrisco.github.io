@@ -53,13 +53,13 @@
             width: 100%;
             position: fixed;
             top: 0;
-            z-index: 998; /* Lowered z-index */
+            z-index: 1000; /* Increased z-index */
         }
 
         .lightbox {
             display: none; /* Ensure this is set */
             position: fixed;
-            z-index: 999; /* High enough to appear on top */
+            z-index: 1001; /* High enough to appear on top */
             left: 0;
             top: 0;
             width: 100%;
@@ -185,9 +185,8 @@
         }
 
         button:focus {
-    outline: none;
-}
-
+            outline: none;
+        }
 
     </style>
 </head>
@@ -197,7 +196,7 @@
             <h1>Jennifer Frisco</h1>
             <h2>Animation and Compositing</h2>
             <!-- Added button to open lightbox -->
-           <button onclick="openLightbox()">View Resume</button>
+            <button onclick="openLightbox()">View Resume</button>
         </div>
     </header>
 
@@ -209,18 +208,17 @@
         </div>
     </div>
 
-
     <div class="video-container">
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/p5-A7hF2VVM?si=hj6_zE0b97fkObFW?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/p5-A7hF2VVM?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Collaboratively provided 2D/3D animation and video editing</p>
         </div>
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/NCVixtktPWI?si=CGYSivzvXgdXsONB?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/NCVixtktPWI?rel=0" frameborder="0" allowfullscreen></iframe>
             <p> Created explainer video of the Cloud</p>
         </div>
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/2feZCJnnf2k?si=Ti6WTYW2orlQqfHr?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/2feZCJnnf2k?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Provided 3D assets based on team member design</p>
         </div>
         <div class="video">
