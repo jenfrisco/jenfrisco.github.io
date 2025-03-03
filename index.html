@@ -249,9 +249,11 @@
 <!-- Add the script here -->
 <script>
     
-    function openPDF() {
+        function openPDF() {
         const overlayContent = document.getElementById('overlayContent');
         const overlay = document.getElementById('pdfOverlay');
+        
+        console.log('Opening PDF...');
         
         // Create the iframe element
         const iframe = document.createElement('iframe');
@@ -265,11 +267,15 @@
         overlayContent.appendChild(iframe);
         overlay.style.display = 'flex';
         document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
+        
+        console.log('PDF should now be loaded');
     }
     
     function closePDF() {
         const overlayContent = document.getElementById('overlayContent');
         const overlay = document.getElementById('pdfOverlay');
+        
+        console.log('Closing PDF...');
         
         // Remove the iframe element
         const iframe = document.getElementById('pdfFrame');
@@ -279,7 +285,10 @@
         
         overlay.style.display = 'none';
         document.body.style.overflow = 'auto'; /* Restore background scrolling */
+        
+        console.log('PDF closed');
     }
+
     
 
 </script>
