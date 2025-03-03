@@ -80,15 +80,7 @@
             position: relative; /* Ensure the close button positions correctly */
         }
         
-function openLightbox() {
-    document.getElementById('resumeLightbox').style.display = 'block';
-    document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
-}
 
-function closeLightbox() {
-    document.getElementById('resumeLightbox').style.display = 'none';
-    document.body.style.overflow = 'auto'; /* Restore background scrolling */
-}
 
 
 
@@ -208,7 +200,7 @@ button:focus {
             <h1>Jennifer Frisco</h1>
             <h2>Animation and Compositing</h2>
             <!-- Added button to open lightbox -->
-            <button onclick="openLightbox()">View Resume</button>
+           <button onclick="openLightbox()">View Resume</button>
         </div>
     </header>
 
@@ -256,10 +248,12 @@ button:focus {
 <script>
     function openLightbox() {
         document.getElementById('resumeLightbox').style.display = 'block';
+        document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
     }
 
     function closeLightbox() {
         document.getElementById('resumeLightbox').style.display = 'none';
+        document.body.style.overflow = 'auto'; /* Restore background scrolling */
     }
 </script>
 
