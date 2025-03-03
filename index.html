@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Frisco</title>
+    <style>
+        @font-face {
+            font-family: 'Geo231Hv';
+            src: url('Geo231Hv.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Geo231Hv', Helvetica, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 5px #0e78b8; /* Blue outline for the text */
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, transparent, rgba(255, 97, 201, 0.91) 10%, rgba(244, 255, 116, 1.0) 20%, rgba(244, 255, 116, 1.0) 80%, rgba(255, 97, 201, 0.91) 90%, transparent), url("rainbow-01-bg.png");
+            background-repeat: repeat;
+            background-size: auto 100px;
+            background-attachment: fixed;
+        }
+        @media (min-width: 481px) {
+            body {
+                background-size: auto 150px;
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                background-size: auto 200px;
+            }
+        }
+        @media (min-width: 1024px) {
+            body {
+                background-size: auto 250px;
+            }
+        }
+
+        header {
+            background: linear-gradient(to bottom, rgba(209, 75, 198, 1.0) 25%, rgba(255, 182, 193, 0.8) 70%, rgba(255, 228, 225, 0.5) 80%, transparent 100%); /* Updated to less saturated and slightly more red magenta shades */
+            color: white; /* Changed text color to white */
+            text-shadow: 2px 2px 5px #0e78b8; /* Updated to less saturated and slightly more red magenta shadow */
+            padding: 15px; /* Increased padding */
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 998; /* Lowered z-index */
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 1.5em; /* Increased font size */
+            margin: 0; /* Removed margin */
+        }
+
+        .header-content {
+            padding: 5px; /* Adjusted padding to bring the texts closer to the top */
+        }
+
+        @media (max-width: 600px) {
+            .header-content {
+                padding: 10px; /* Smaller padding for smaller screens */
+            }
+            h2 {
+                font-size: 1.0em; /* Smaller font size for smaller screens */
+                margin: 0;
+            }
+        }
+
+        p {
+            font-family: 'Geo231Hv', Helvetica, sans-serif;
+            font-size: 0.75em;
+            -webkit-text-stroke: 0.5px #0e78b8; /* Blue outline */
+            margin: 0;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+            padding-top: 150px; /* Raised the video embeds slightly */
+            position: relative; /* Added for white blobbies */
+            z-index: 2; /* Ensured the videos and text are above the blobs */
+        }
+        .video {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            margin: 10px;
+        }
+        .video iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px #0e78b8; /* Added drop shadow */
+        }
+
+        .video video {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px #0e78b8; /* Added drop shadow */
+        }
+
+        @media (max-width: 768px) {
+            .video {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+            .video iframe,
+            .video video {
+                height: 150px;
+            }
+        }
+        @media (max-width: 480px) {
+            .video {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            .video iframe,
+            .video video {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Jennifer Frisco</h1>
+            <h2>Animation and Compositing</h2>
+        </div>
+    </header>
+    <div class="video-container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/p5-A7hF2VVM?si=hj6_zE0b97fkObFW?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p>Collaboratively provided 2D/3D animation and video editing</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/NCVixtktPWI?si=CGYSivzvXgdXsONB?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p>Created explainer video of the Cloud</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/2feZCJnnf2k?si=Ti6WTYW2orlQqfHr?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p>Provided 3D assets based on team member design</p>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/v8BT2I5zfAM?si=HMg2jByEFtmEG7nW?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p>Assisted in 2D/3D animation and rigged assets provided by team for pilot episode</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="DEA_04_APO_208_010001-0047.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Composited face model onto stop motion footage for lip sync</p>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="DEA_04_APO_210_Output0001-0052.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Composited face model onto stop motion footage for lip sync</p>
+        </div>
+    </div>
+</body>
+</html>
