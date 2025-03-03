@@ -55,29 +55,28 @@
             top: 0;
             z-index: 998; /* Lowered z-index */
         }
-    .lightbox {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.8); /* Black w/opacity */
-        display: flex;
-        align-items: flex-end; /* Aligns the content at the bottom of the viewport */
-    }
-    
-    .lightbox-content {
-        margin: 0 auto;
-        padding: 20px;
-        width: 80%;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 5px 5px 15px #0e78b8; /* Added drop shadow */
-        height: 80vh; /* Full height of the viewport */
-    }
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8); /* Black w/opacity */
+            display: flex;
+            align-items: center; /* Center the content vertically */
+            justify-content: center; /* Center the content horizontally */
+        }
+        
+        .lightbox-content {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 5px 5px 15px #0e78b8; /* Added drop shadow */
+        }
+
 
 
         .lightbox-content iframe {
@@ -195,12 +194,13 @@
     </header>
 
     <!-- Lightbox HTML structure -->
-    <div id="resumeLightbox" class="lightbox"> <!-- Corrected the id -->
+    <div id="resumeLightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
         <div class="lightbox-content">
-            <iframe src="JenniferFriscoResume3.3.2025.pdf" style="width: 100%; height: 100vh;"></iframe> <!-- Closed the iframe tag -->
+            <iframe src="JenniferFriscoResume3.3.2025.pdf" style="width: 100%; height: 100%;"></iframe>
         </div>
     </div>
+
 
     <div class="video-container">
         <div class="video">
