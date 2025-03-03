@@ -249,7 +249,7 @@
 <!-- Add the script here -->
 <script>
     
-       function openPDF() {
+    function openPDF() {
         const overlayContent = document.getElementById('overlayContent');
         const overlay = document.getElementById('pdfOverlay');
         
@@ -259,6 +259,7 @@
         iframe.src = 'JenniferFriscoResume3.3.2025.pdf';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
+        iframe.allowfullscreen = true;
         
         // Append the iframe to the overlay content
         overlayContent.appendChild(iframe);
@@ -279,6 +280,7 @@
         overlay.style.display = 'none';
         document.body.style.overflow = 'auto'; /* Restore background scrolling */
     }
+    
 
 </script>
 </body>
