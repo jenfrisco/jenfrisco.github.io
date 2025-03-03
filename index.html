@@ -55,32 +55,6 @@
             top: 0;
             z-index: 1000; /* Increased z-index */
         }
-
-        .lightbox {
-            display: none; /* Ensure this is set */
-            position: fixed;
-            z-index: 1001; /* High enough to appear on top */
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.8); /* Black with opacity */
-            display: flex;
-            align-items: center; /* Center the content vertically */
-            justify-content: center; /* Center the content horizontally */
-        }
-
-        .lightbox-content {
-            width: 80%; /* Adjust width to make it smaller */
-            height: 80%; /* Adjust height to make it smaller */
-            max-width: 1200px; /* Set a maximum width */
-            max-height: 800px; /* Set a maximum height */
-            background-color: #fff;
-            box-shadow: 5px 5px 15px #0e78b8;
-            position: relative; /* Ensure the close button positions correctly */
-        }
-
         h1 {
             font-size: 2em;
             margin: 0;
@@ -163,31 +137,6 @@
             }
         }
 
-        button {
-            background: linear-gradient(to right, #ff61c9, #f4ff74);
-            border: none;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1em;
-            border-radius: 25px;
-            box-shadow: 3px 3px 10px #0e78b8; /* Added drop shadow */
-            cursor: pointer;
-            transition: background 0.3s, transform 0.3s;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background: linear-gradient(to right, #f4ff74, #ff61c9);
-            transform: scale(1.05);
-        }
-
-        button:focus {
-            outline: none;
-        }
-
     </style>
 </head>
 <body>
@@ -227,24 +176,5 @@
         </div>
     </div>
 
-    <!-- Lightbox HTML moved to the end of the body -->
-    <div id="resumeLightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <div class="lightbox-content">
-            <iframe src="JenniferFriscoResume3.3.2025.pdf" style="width: 100%; height: 100%;"></iframe>
-        </div>
-    </div>
-
-    <script>
-        function openLightbox() {
-            document.getElementById('resumeLightbox').style.display = 'block';
-            document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
-        }
-
-        function closeLightbox() {
-            document.getElementById('resumeLightbox').style.display = 'none';
-            document.body.style.overflow = 'auto'; /* Restore background scrolling */
-        }
-    </script>
 </body>
 </html>
