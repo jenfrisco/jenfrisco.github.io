@@ -191,7 +191,7 @@
     </style>
 </head>
 <body>
-    <header>
+  <header>
         <div class="header-content">
             <h1>Jennifer Frisco</h1>
             <h2>Animation and Compositing</h2>
@@ -200,14 +200,6 @@
         </div>
     </header>
 
-    <!-- Lightbox HTML structure -->
-    <div id="resumeLightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <div class="lightbox-content">
-            <iframe src="JenniferFriscoResume3.3.2025.pdf" style="width: 100%; height: 100%;"></iframe>
-        </div>
-    </div>
-
     <div class="video-container">
         <div class="video">
             <iframe src="https://www.youtube.com/embed/p5-A7hF2VVM?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -215,41 +207,45 @@
         </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/NCVixtktPWI?rel=0" frameborder="0" allowfullscreen></iframe>
-            <p> Created explainer video of the Cloud</p>
+            <p>Created explainer video of the Cloud</p>
         </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/2feZCJnnf2k?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Provided 3D assets based on team member design</p>
         </div>
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/v8BT2I5zfAM?si=HMg2jByEFtmEG7nW?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/v8BT2I5zfAM?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Assisted in 2D/3D animation and rigged assets provided by team for pilot episode</p>
         </div>
-
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/rxy_n2qUdN0?si=PAh_nwJwTd-a2lqH?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/rxy_n2qUdN0?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Composited provided face model onto stop motion footage for lip sync</p>
         </div>
-
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/HLJnm5fBF94?si=uNd8SM7NEom4YBoj?rel=0" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/HLJnm5fBF94?rel=0" frameborder="0" allowfullscreen></iframe>
             <p>Composited provided face model onto stop motion footage for lip sync</p>
-        </div>
         </div>
     </div>
 
+    <!-- Move the Lightbox HTML to the end of the body -->
+    <div id="resumeLightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <iframe src="JenniferFriscoResume3.3.2025.pdf" style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox() {
+            document.getElementById('resumeLightbox').style.display = 'block';
+            document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
+        }
+
+        function closeLightbox() {
+            document.getElementById('resumeLightbox').style.display = 'none';
+            document.body.style.overflow = 'auto'; /* Restore background scrolling */
+        }
+    </script>
 </body>
-
-<script>
-    function openLightbox() {
-        document.getElementById('resumeLightbox').style.display = 'block';
-        document.body.style.overflow = 'hidden'; /* Prevent background scrolling */
-    }
-
-    function closeLightbox() {
-        document.getElementById('resumeLightbox').style.display = 'none';
-        document.body.style.overflow = 'auto'; /* Restore background scrolling */
-    }
-</script>
 
 </html>
